@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+
+/* navbar */
+.navbar {
+  background-color: white;
+  padding: 10px;
+  height: 100px;
+}
+.navbar-brand img {
+  margin-left: 50px;
+  width: 140px;
+  height: 100%;
+ 
+}
+nav ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  
+}
+.navbar-light .navbar-collapse .navbar-nav  .nav-link{
+  color: black;
+  font-size: 14px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+.navbar-toggler {
+  font-size: 30px;
+  color: black;
+  /* float: right; */
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.navbar .navbar-collapse .dropdown .dropdown-menu a {
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+/* footer */
+.footer-dark {
+  padding: 33px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.footer-dark .logo img {
+  margin-top: -290px;
+  width: 140px;
+  height: 120px;
+  filter: invert(100%) sepia(0%) saturate(10000%) hue-rotate(180deg);
+   margin-left: 10px; 
+  
+}
+.footer-dark .nama-desa {
+  margin-top: 70px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "David Libre", serif;
+}
+.footer-dark .item p {
+  line-height: 10px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+.footer-dark .foll {
+  font-size: 26px;
+  font-family: "David Libre", serif;
+  color: white;
+  margin-left: 55%;
+  margin-top: 50px;
+}
+.border {
+  width: 110px;
+  height: 4px;
+  background: #fc5c65;
+  margin-left: 55%;
+}
+.social-media {
+  margin: 20px 0;
+  margin-left: 55%;
+}
+.social-media a {
+  color: white;
+  margin-right: 55px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.social-media a:hover {
+  color: #fc5c65;
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-dark .logo img {
+    margin-top: -630px;
+    width: 140px;
+    height: 120px;
+    filter: invert(100%) sepia(0%) saturate(10000%) hue-rotate(180deg);
+     margin-left: 165px; 
+    
+  }
+}
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer-dark .item.text {
+    margin-bottom: 36px;
+  }
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+  .footer-dark .foll {
+    margin-left: -5px;
+  }
+  .border {
+    margin-left: 37%;
+  }
+  .social-media {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 575px) {
+  /* navbar */
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+  .navbar-brand img {
+    margin-left: 25px;
+    margin-top: -40px; 
+  }
+  .border {
+    margin-left: 33%;
+  }
+  nav ul {
+    text-align: center;
+    margin-top: 20px;
+    height: 50vh;
+  }
+  nav ul li {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+  .navbar-collapse {
+    background: #2c3e50;
+    opacity: 0.8;
+  }
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+  }
+}

@@ -1,0 +1,39 @@
+.check-pertanian{
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    min-height: 100vh;
+    /* background-color: rebeccapurple; */
+}
+.check-pertanian .kiri{
+    /* background-color: cadetblue; */
+     padding: 1rem; 
+}
+.check-pertanian .kanan{
+    height: 100%;
+}
+.check-pertanian .kiri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-pertanian{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.check-pertanian .container-pertanian .card{
+    /* background-color: black; */
+    margin: .2rem;
+    width: 23%;
+}
+.check-pertanian .container-pertanian .card .card-img-top{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+

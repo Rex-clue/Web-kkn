@@ -1,0 +1,12 @@
+body {
+  background: whitesmoke;
+}
+
+/* content */
+.agenda h1 {
+  margin-top: 120px;
+  color: #3a6fb4;
+  text-align: center;
+  /* margin: 0%; */
+  padding-bottom: 50px;
+}

@@ -1,0 +1,39 @@
+.check-kesenian{
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    min-height: 100vh;
+    /* background-color: rebeccapurple; */
+}
+.check-kesenian .kiri{
+    /* background-color: cadetblue; */
+     padding: 1rem; 
+}
+.check-kesenian .kanan{
+    height: 100%;
+}
+.check-kesenian .kiri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-kesenian{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.check-kesenian .container-kesenian .card{
+    /* background-color: black; */
+    margin: .2rem;
+    width: 23%;
+}
+.check-kesenian .container-kesenian .card .card-img-top{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+

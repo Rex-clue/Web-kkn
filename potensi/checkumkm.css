@@ -1,0 +1,38 @@
+.check-umkm{
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    min-height: 100vh;
+}
+.check-umkm .kiri{
+    /* background-color: cadetblue; */
+    padding: 1rem;
+}
+.check-umkm .kanan{
+    height: 100%;
+}
+.check-umkm .kiri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-umkm{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.check-umkm .container-umkm .card{
+    /* background-color: black; */
+    margin: .2rem;
+    width: 23%;
+}
+.check-umkm .container-umkm .card .card-img-top{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+
+}
+

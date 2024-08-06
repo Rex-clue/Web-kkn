@@ -1,0 +1,40 @@
+.check-detail{
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    min-height: 100vh;
+    /* background-color: rebeccapurple; */
+}
+.check-detail .kiri{
+    /* background-color: cadetblue; */
+     padding: 1rem; 
+}
+.check-detail.kanan{
+    height: 100%;
+}
+.check-detail .kiri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-detail{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.check-detail .container-detail .card{
+    /* background-color: black; */
+    margin: .2rem;
+    width: 23%;
+}
+.check-detail .container-detail .card .card-img-top{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+

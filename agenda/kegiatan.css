@@ -1,0 +1,76 @@
+.agenda h1 {
+  margin-top: 80px;
+}
+
+.judul {
+  color: black;
+  font-family: Century751 No2 BT;
+  font-size: 27px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+.box {
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+}
+h1 {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Verdana;
+  color: #806000;
+  letter-spacing: -9px;
+}
+h1 span {
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  line-height: 60px;
+  color: #806000;
+  text-shadow: 0 3px #c4b59d, 0 0px 0px #fff;
+  letter-spacing: -4px;
+}
+.col-6 {
+  text-align: center;
+  margin-left: 0%;
+  padding-left: 0%;
+  margin-right: 0%;
+  padding-right: 0%;
+}
+.card-title {
+  font-family: Century751 No2 BT;
+}
+.judul1 {
+  font-size: 23px;
+  font-family: Verdana;
+  color: #bf8f00;
+  padding-left: 25px;
+  padding-bottom: 2%;
+}
+.judul2 {
+  font-size: 23px;
+  font-family: Verdana;
+  color: #bf8f00;
+  padding-left: 25px;
+  padding-bottom: 2%;
+  padding-top: 5%;
+}
+.title1,
+.title2 {
+  font-size: 20px;
+  font-family: Verdana;
+  color: #bf8f00;
+}
+.tabb {
+  padding-left: 25px;
+  text-align: center;
+  font-family: Verdana;
+}
+.card {
+  background: url(dist/img/copy1.png);
+  height: 100%;
+}

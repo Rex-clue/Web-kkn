@@ -1,0 +1,30 @@
+.lpmd .card-header .media-body h5 {
+  margin-top: 100px;
+}
+.rtrw .card-header .media-body h5 {
+  margin-top: 100px;
+}
+.karang .card-header .media-body h5 {
+  margin-top: 100px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.image-container {
+  overflow: hidden; /* Untuk memotong gambar yang melebihi kotak */
+  width: auto; /* Sesuaikan ukuran sesuai kebutuhan Anda */
+  height: auto;
+}
+
+.image-container img {
+  width: 100%; /* Pastikan gambar memenuhi kotak */
+  border: none; /* Hapus border */
+  transition: transform 0.5s; /* Efek transisi untuk zoom */
+}
+
+/* Efek zoom in saat hover */
+.image-container:hover img {
+  transform: scale(1.2); /* Sesuaikan tingkat zoom sesuai kebutuhan Anda */
+}

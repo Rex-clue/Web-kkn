@@ -1,0 +1,36 @@
+.check-wisata{
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    min-height: 100vh;
+}
+.check-wisata .kiri{
+    /* background-color: cadetblue; */
+     padding: 1rem; 
+}
+.check-wisata .kanan{
+    height: 100%;
+}
+.check-wisata .kiri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-wisata{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.check-wisata .container-wisata .card{
+    /* background-color: black; */
+    margin: .2rem;
+    width: 23%;
+}
+.check-wisata .container-wisata .card .card-img-top{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}

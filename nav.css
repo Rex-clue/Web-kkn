@@ -1,0 +1,1509 @@
+
+
+
+/* Reset some default browser styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and text color */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: transparent;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+header h2 {
+  font-size: 1.5em;
+  color: black;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the main content area */
+.main1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the card */
+.card {
+  background-color: transparent;
+  border: 5px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card img {
+  max-width: 100%;
+  height: 70%;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card p {
+  margin-bottom: 10px;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card button {
+  background-color: #20b670;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #1a914d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main1 {
+      padding: 10px;
+  }
+}
+
+/* Kalender*/
+
+.text-center {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.text-center1 {
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+.text-center2 {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+.date {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  /* Warna teks sesuai preferensi Anda */
+}
+
+.container1 {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.container1 .item {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+
+.container1 .item {
+  float: left;
+  list-style: none;
+  width: 80%;
+  height: 300px;
+  background: white;
+  margin: 10px 0px 10px 55px;
+  border: 2px solid #20b670;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+
+.container1 .item:hover {
+  opacity: 0.8;
+}
+
+.container1 .item .bottom {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: transparent;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-radius: 8%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  color: #000;
+}
+
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1250px) {
+  .container1 .item {
+    width: 40%;
+    margin-left: 40px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .container1 .item {
+    width: 80%;
+    margin-left: 35px;
+    align-items: center;
+  }
+}
+
+/* Destinasi Wisata */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+
+.slider {
+  margin-top: -100px;
+  margin-bottom: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Ratakan ke tengah secara horizontal */
+  align-items: center; /* Ratakan ke tengah secara vertikal */
+  height: 100vh; /* Tinggi slider sesuai dengan tinggi viewport */
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  width: auto;
+  background: #20b670; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #20b670, #20b670); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #20b670, #20b670); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+.slider-card {
+  background: #fff;
+  padding: 0px 0px;
+  margin: 50px 10px 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+  text-align: center; /* Ratakan teks ke tengah */
+  padding: 20px; /* Sesuaikan sesuai kebutuhan Anda */
+}
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+  max-height: 100%;
+  width: auto;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+
+
+/* LAYANAN MASYARAKAT */
+.lala {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+ 
+  
+  
+}
+.card-containerpelayanan {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-top: 10px;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1300px;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.card-containerdemografi {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1300px;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.card-containerdemografi .col-sm-4{
+  align-items: center;
+  margin-left: 30px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #20b670;
+  color: #fff;
+  border-radius: 5%;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #20b670;
+  color: #fff;
+  border-radius: 5%;
+  text-align: left;
+  font-size: 12px;
+  padding: 15px;
+  font-weight: bold;
+  transform: rotateY(180deg);
+}
+header,
+.syarat {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+header h1,
+.syarat h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.containerpelayanan {
+  max-width: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.steppelayanan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #2ee596;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+  width: 100%;
+}
+
+.steppelayanan img{
+  width: 100%;
+}
+
+/* Dusun */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 10rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Posisikan elemen secara vertikal */
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  padding: 15px;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto; /* Posisikan elemen di bawah tengah */
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.card:hover .card-bg {
+  transform: scale(1.20);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 150px; /* Kartu akan penuh lebar pada layar kecil */
+    height: 200px;
+
+  }
+}
+
+
+
+
+
+
+
+/* video profil */
+.video-container {
+  position: relative;
+  width: 50%;
+  height: auto;
+  padding-bottom: 56.25%;
+  /* Rasio aspek 16:9 */
+}
+
+.video-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* demografi */
+  /* article */
+  .article h3 {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #4c4c4c;
+  }
+  
+  .article hr {
+    border-top: 2px solid #4c4c4c;
+  }
+  
+  .article .card-demografi {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .article .card-demografi .card-demografi-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Trebuchet MS";
+    font-weight: 800;
+  }
+  
+  .article .card-demografi .card-demografi-text {
+    font-size: 20px;
+  }
+  
+  .article .card-demografi .btn {
+    font-size: 14px;
+    background: dodgerblue;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .article .card-demografi .btn:hover {
+    background: mediumslateblue;
+  }
+  
+  /* .article .col-md-4 {
+      max-height: 50px;
+    } */
+  
+
+.demografi h4 {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.demografi h4 {
+  font-size: 22px;
+}
+
+.demografi h5 {
+  font-size: 16px;
+}
+
+
+
+/* navbar */
+.navbar {
+  background: white;
+  padding: 10px;
+  height: 100px;
+}
+.navbar-brand img {
+  position: relative;
+  width: 10%;
+  z-index: 1;
+  transition: transform 0.3s;
+  margin-left: 25px;
+   width: 200px;
+   height: 170px;
+}
+nav ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff8c00;
+}
+.navbar-toggler {
+  font-size: 30px;
+  color: black;
+  /* float: right; */
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* slider */
+.carousel-item{
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.carousel-item img{
+  margin-top: -120px;
+}
+
+.carousel-item hr{
+  border-color: #F05F40;
+  width: 70px;
+  border-width: 3px;
+}
+.carousel-item .btn{
+  background-color: #F05F40;
+  border: none;
+  border-radius: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 40px;
+}
+.carousel-item .containerheader{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-item h2 {
+  font-size: 80px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  opacity: 0;
+}
+.carousel-item p {
+  font-size: 30px;
+  margin: 0;
+  color: #eeeeee;
+  opacity: 0;
+}
+
+.carousel-item.active h2 {
+  animation: fadeInLeft 0.5s ease forwards;
+}
+ .carousel-item.active p {
+  animation: fadeInRight 0.5s ease forwards;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+
+
+
+/* article */
+/* artikel */
+.isi .judul {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  color: #09bb9b;
+  font-size: 36px;
+  font-family: "GothamBook";
+  overflow: hidden;
+}
+
+/* card */
+.container .post {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.container .post:hover {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.container .post:hover .header_post {
+  margin-top: -5px;
+}
+.container .post:hover .body_post {
+  height: 50%;
+}
+.container .post:hover img {
+  transform: translatey(-10px) translatex(-5px) scale(1.05);
+}
+.container .post .header_post {
+  width: 100%;
+  height: 40%;
+  background: #ddd;
+  position: absolute;
+  top: 0;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -o-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+}
+.container .post .header_post img {
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: ease-in-out 600ms;
+}
+.container .post .body_post {
+  width: 100%;
+  height: 55%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -o-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+}
+.container .post .body_post .post_content {
+  width: 80%;
+  height: 80%;
+  background: #fff;
+  position: relative;
+}
+.container .post .body_post .post_content h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.container .post .body_post .post_content p {
+  font-size: 14px;
+  font-weight: normal;
+}
+.container .post .body_post .post_content .container_infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 2px;
+}
+.container .post .body_post .post_content .container_infos .postedBy {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.container .post .body_post .post_content .container_infos .postedBy span {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* .article .col-md-4 {
+    max-height: 50px;
+  } */
+
+/* detailart */
+.kanan a {
+  text-decoration: none;
+  font-family: "Open Sans_bold", sans-serif;
+  color: black;
+}
+.bodyisi .judul {
+  margin-top: 120px;
+  font-family: "Trebuchet MS";
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.bodyisi .jdl {
+  margin-top: 120px;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+}
+.to-top {
+  background: rgb(240, 157, 3);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.to-top:hover {
+  color: #1f1f1f;
+  background: rgb(207, 135, 2);
+}
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* pagination */
+.pagination ul {
+  display: flex;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50px;
+}
+.pagination ul li {
+  list-style: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #20b2aa;
+}
+.pagination ul li.numb {
+  height: 40px;
+  width: 45px;
+  margin: 0 3px;
+}
+.pagination ul li.dots {
+  font-size: 22px;
+  cursor: default;
+}
+.pagination ul li.btn {
+  padding: 0 20px;
+}
+.pagination ul li.prev {
+  border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.next {
+  border-radius: 5px 25px 25px 5px;
+}
+.pagination ul li.active,
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover {
+  background: #20b2aa;
+  color: white;
+}
+
+.page {
+  margin-bottom: 20px;
+  /* border: 5px solid white; */
+}
+.page a {
+  font-size: 18px;
+  background: lightgreen;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: white;
+}
+.page a:hover {
+  text-decoration: none;
+  background: #20b2aa;
+  transition: 0.5s ease;
+}
+.page .previous {
+  border-radius: 25px 5px 5px 25px;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+.page .next {
+  border-radius: 5px 25px 25px 5px;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+
+/* datetime */
+.datetime {
+  margin-top: 40px;
+  margin-left: 50px;
+  background: firebrick;
+  font-family: "Segoe UI", sans-serif;
+  width: 300px;
+  padding: 15px 10px;
+  border: 20px solid white;
+  border-radius: 5px;
+  /* -webkit-box-reflect: below 1px
+      linear-gradient(transparent, rgba(255, 255, 255, 0.1)); */
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.datetime:hover {
+  background: crimson;
+  box-shadow: 0 0 30px #2e94e3;
+}
+.date {
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.time {
+  font-size: 25px;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 5px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.time span:last-child {
+  background: deepskyblue;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/* foto kades */
+.pict-kades img {
+  width: 300px;
+  height: 380px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border: 10px solid white;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.pict-kades img:hover {
+  box-shadow: 0 0 30px #2e94e3;
+}
+
+/* pengaduan */
+.pengaduan {
+  border: 10px solid white;
+  margin-top: 20px;
+  width: 300px;
+  margin-left: 50px;
+  padding: 10px 10px;
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.pengaduan:hover {
+  box-shadow: 0 0 30px #2e94e3;
+}
+.pengaduan h3 {
+  margin-top: 0;
+  font-size: 22px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+.pengaduan img {
+  width: 60px;
+  height: 50px;
+}
+.whatsapp a:hover {
+  text-decoration: none;
+}
+
+/* peta desa */
+.map-desa iframe {
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 10px solid white;
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.map-desa iframe:hover {
+  box-shadow: 0 0 30px #2e94e3;
+}
+
+/* video profil */
+.video-profil iframe {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  border: 10px solid white;
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.video-profil iframe:hover {
+  box-shadow: 0 0 30px #2e94e3;
+}
+
+/* footer */
+.footer-dark {
+  padding: 33px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+.footer-dark .nama-desa {
+  margin-top: 70px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: comic sans ms;
+}
+.footer-dark .item p {
+  line-height: 10px;
+  font-size: 14px;
+  font-family: comic sans ms;
+}
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+.footer-dark .foll {
+  font-size: 26px;
+  font-family: "David Libre", serif;
+  color: white;
+  margin-left: 55%;
+  margin-top: 50px;
+}
+.border {
+  width: 110px;
+  height: 4px;
+  background: #fc5c65;
+  margin-left: 55%;
+}
+.social-media {
+  margin: 20px 0;
+  margin-left: 55%;
+}
+.social-media a {
+  color: white;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.social-media a:hover {
+  color: #fc5c65;
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* responsive */
+@media screen and (min-width: 1180px) {
+  .container11 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1145px;
+  }
+}
+@media screen and (min-width: 999px) {
+  .isidetail:nth-child(odd) {
+    float: left;
+    width: 69%;
+    overflow: hidden;
+  }
+  .isidetail {
+    float: right;
+    width: 28%;
+    overflow: hidden;
+  }
+
+  .judul {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    /* font-family: "Trebuchet MS"; */
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .gbrart {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gbrart img {
+    width: 96%;
+    background: #fff;
+    padding: 2%;
+  }
+
+  .teks {
+    width: 96%;
+    padding: 2%;
+    float: left;
+    background: #fff;
+    font-family: "GothamBook";
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+  }
+  .teks p {
+    padding-bottom: 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .jdl {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
+
+  .samping {
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .boxsamping {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d6d5d5;
+    margin-bottom: 15px;
+  }
+
+  .pic {
+    width: 30%;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+  }
+  .pic img {
+    height: 90px;
+  }
+
+  .kanan {
+    width: 65%;
+    height: 100px;
+    float: right;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 998px) {
+  .isidetail:nth-child(odd) {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+  .isidetail {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+  .judul {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .gbrart {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gbrart img {
+    width: 96%;
+    background: #fff;
+    padding: 2%;
+    vertical-align: middle;
+  }
+
+  .teks {
+    width: 96%;
+    padding: 3%;
+    float: left;
+    background: #fff;
+    font-family: "GothamBook";
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.5em;
+  }
+  .teks p {
+    padding-bottom: 10px;
+    display: block;
+  }
+
+  .jdl {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .samping {
+    width: 70%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .boxsamping {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cc3c3c;
+    margin-bottom: 15px;
+  }
+
+  .pic {
+    width: 27%;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+  }
+  .pic img {
+    height: 90px;
+  }
+
+  .kanan {
+    width: 65%;
+    height: 100px;
+    float: right;
+    overflow: hidden;
+  }
+}
+@media (max-width: 968px) {
+
+
+  .article .card {
+    width: 700px;
+  }
+  /* .article .card .card-title {
+      font-size: 14px;
+    }
+    .article .card .card-text {
+      font-size: 12px;
+    } */
+
+  /* datetime */
+  .datetime {
+    width: 300px;
+  }
+  .date {
+    font-size: 10px;
+  }
+
+  /* detail */
+  .bodyisi {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  /* footer */
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  
+  
+   .carousel-item h2 {
+    font-size: 45px;
+  }
+   .carousel-item p {
+    font-size: 22px;
+  }
+
+  /* artikel */
+  .container .post {
+    width: 230px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    margin: 20px auto;
+  }
+  .container .post .body_post .post_content p {
+    font-size: 10px;
+  }
+  .container .post .body_post .post_content h1 {
+    font-size: 15px;
+  }
+  .container .post .body_post .post_content .container_infos {
+    padding-top: 2px;
+  }
+  .container .post .body_post .post_content .container_infos .postedBy {
+    font-size: 10px;
+  }
+  .container .post .body_post .post_content .container_infos .postedBy span {
+    font-size: 10px;
+  }
+
+  /* footer */
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer-dark .item.text {
+    margin-bottom: 36px;
+  }
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+  .footer-dark .foll {
+    margin-left: -5px;
+  }
+  .border {
+    margin-left: 37%;
+  }
+  .social-media {
+    margin-left: 10%;
+  }
+
+  /* pagination */
+  .page .previous {
+    margin-left: 5px;
+  }
+  .page .next {
+    margin-left: 5px;
+  }
+}
+
+
+  /* datetime */
+  .datetime {
+    margin-left: 75px;
+  }
+
+  /* pict-kades */
+  .pict-kades img {
+    margin-left: 75px;
+  }
+
+  /* pengaduan */
+  .pengaduan {
+    margin-left: 75px;
+  }
+
+  /* mapdesa */
+  .map-desa iframe {
+    margin-left: 75px;
+  }
+
+  /* video-profil */
+  .video-profil iframe {
+    margin-left: 75px;
+  }
+
+  .isidetail {
+    margin-left: 10px;
+  }
+  .isidetail .jdl {
+    /* margin-left: 10px; */
+    margin-top: 20px;
+  }
+  .samping {
+    margin-left: 10px;
+  }
+  .jdl {
+    margin-left: 10px;
+  }
+
+
+
+
+ 

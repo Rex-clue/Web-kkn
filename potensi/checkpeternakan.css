@@ -1,0 +1,38 @@
+.check-peternakan{
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+    min-height: 100vh;
+}
+.check-peternakan .kiri{
+    /* background-color: cadetblue; */
+    padding: 1rem;
+}
+.check-peternakan .kanan{
+    height: 100%;
+}
+.check-peternakan .kiri img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-peternakan{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.check-peternakan .container-peternakan .card{
+    /* background-color: black; */
+    margin: .2rem;
+    width: 23%;
+}
+.check-peternakan .container-peternakan .card .card-img-top{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+
+}
+

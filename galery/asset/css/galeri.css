@@ -1,0 +1,306 @@
+body {
+  background: whitesmoke;
+}
+
+/* artikel */
+.isi .judul {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-family: "GothamBook";
+  overflow: hidden;
+}
+
+/* navbar */
+.navbar {
+  background: white;
+}
+.navbar-brand img {
+  margin-left: 50px;
+}
+nav ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff8c00;
+}
+.navbar-toggler {
+  font-size: 30px;
+  color: black;
+  /* float: right; */
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* galeri */
+.galeri h5 {
+  padding-top: 120px;
+  margin-top: auto;
+  margin-bottom: 50px;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.galeri .col-md-4 {
+  margin-bottom: 40px;
+  overflow: hidden; /* Mengatasi gambar yang keluar dari kotak */
+  position: relative; /* Diperlukan untuk kontainer */
+}
+
+.galeri .col-md-4 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s; /* Efek transisi untuk transformasi gambar */
+}
+
+.galeri .col-md-4:hover img {
+  transform: scale(1.2); /* Membesarkan gambar saat hover */
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* clothes */
+body .banner {
+  background-image: url("asset/img/logodesa.jpg");
+  width: 100%;
+  height: 80vh;
+  position:fixed;
+  opacity: 0.9;
+  background-position: center;
+  background-size: absolute;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.banner-content h2 {
+  color: white;
+  position: relative;
+  top: 40%;
+  left: 45%;
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+/* breadcrumbs */
+.breadcrumb {
+  margin-top: 0px;
+  padding: 16px 0px;
+  list-style: none;
+  background-color: #eee;
+}
+.breadcrumb li {
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-left: 30px;
+
+}
+
+.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "|\00a0";
+}
+
+.breadcrumb li a {
+  color: orange;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.breadcrumb li a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* footer */
+.footer-dark {
+  padding: 33px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+.footer-dark .nama-desa {
+  margin-top: 70px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: comic sans ms;
+}
+.footer-dark .item p {
+  line-height: 10px;
+  font-size: 14px;
+  font-family: comic sans ms;
+}
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+.footer-dark .foll {
+  font-size: 26px;
+  font-family: "David Libre", serif;
+  color: white;
+  margin-left: 55%;
+  margin-top: 50px;
+}
+.border {
+  width: 110px;
+  height: 4px;
+  background: #fc5c65;
+  margin-left: 55%;
+}
+.social-media {
+  margin: 20px 0;
+  margin-left: 55%;
+}
+.social-media a {
+  color: white;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+.social-media a:hover {
+  color: #fc5c65;
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/* 
+height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("photographer.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+h5 {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-family: "GothamBook";
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.zoom-effect {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+}

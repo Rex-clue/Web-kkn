@@ -1,0 +1,170 @@
+.logo {
+  width: 40px;
+}
+
+.h4 {
+  font-weight: bold;
+}
+
+.col-sm-8 {
+  text-align: justify;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.col-sm-8 img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* .navbar-nav {
+    margin-left: auto;
+} */
+
+p {
+  margin-bottom: 10px;
+}
+.col-sm-5 {
+  text-align: center;
+}
+
+body {
+  font-family: "Open Sans", Sans-serif;
+}
+
+/* informasi */
+.informasi {
+  background: whitesmoke;
+  background-size: cover;
+}
+.informasi h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.informasi .img-info img {
+  width: 500px;
+  height: 450px;
+}
+
+/* geografis */
+.geo h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.geografis h5 {
+  font-size: 18px;
+}
+.wilayah h5 {
+  font-size: 18px;
+}
+
+/* topografi */
+.topografi h4 {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* demografi */
+.demografi h4 {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* sejarah */
+.sejarah {
+  background: whitesmoke;
+  background-size: cover;
+}
+.sejarah h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.nama-pem h5 {
+  font-size: 18px;
+}
+
+/* visi */
+.visi-misi {
+  background: whitesmoke;
+  background-size: cover;
+}
+.visi-misi h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.visi-misi h4 {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* responsive */
+@media (max-width: 575px) {
+   .informasi h2 {
+    font-size: 24px;
+  }
+  .informasi .img-info img {
+    width: 300px;
+    height: 300px;
+  }
+  .informasi .geo h4 {
+    font-size: 22px;
+  }
+  .informasi h5 {
+    font-size: 16px;
+  }
+  .geografis ul li {
+    font-size: 13px;
+  }
+
+  .geografis .col-sm-8{
+    margin-top: -150px;
+    margin-left: 165px; 
+  }
+
+  .wilayah .col-sm-4{
+    font-size: 13px;
+  }
+
+  .wilayah .col-sm-8{
+    margin-top: -95px;
+    margin-left: 165px; 
+    font-size: 13px;
+  }
+
+  .submenu .list-group {
+    margin-bottom: 40px;
+  }
+
+  .topografi h4 {
+    font-size: 22px;
+  }
+
+  .demografi h4 {
+    font-size: 22px;
+  }
+  .demografi h5 {
+    font-size: 16px;
+  }
+
+  .sejarah h2 {
+    font-size: 24px;
+  }
+  .nama-pem h5 {
+    font-size: 16px;
+  }
+
+  .visi-misi h2 {
+    font-size: 24px;
+  }
+  .visi-misi .visi h4 {
+    font-family: 22px;
+  }
+}
